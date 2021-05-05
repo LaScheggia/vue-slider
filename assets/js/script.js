@@ -22,7 +22,7 @@ const app = new Vue({
     nextCar(){
       this.counterCar++;
       if(this.counterCar === this.photos.lenght) this.counterCar = 0;
-      console.log('diocane')
+
 
     },
     prevCar(){
@@ -36,4 +36,3 @@ const app = new Vue({
 
 });
 
-console.log('stocazzo')
