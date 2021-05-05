@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- qua ho il mio contenitore -->
+  <div id="app" class="container">
+
+    <!-- il contenitore del carousel -->
+    <div class="slide-wrapper">
+      
+      <div class="prev" @click="prevCar"> <!-- freccetta prev -->
+        <i class="fas fa-angle-double-left"></i>
+      </div>
+
+      <div class="images"> <!-- qua dentro ci genero le brum brum -->
+        <img :src="photos[counterCar]" alt="">
+
+      </div>
+
+      <div class="nav"> <!-- nav dei pallini -->
+        <!-- ciclo for, se l'indice corrisponde al contatore della macchina è activesennò no -->
+        <i 
+        v-for="(dot, index) in photos"
+        :class="(index === counterCar) ? 'active' : null"
+        class="fas fa-car"
+        @click="counterCar = index"
+        ></i>
+
+      </div>
+
+      <div class="next"> <!-- freccetta next -->
+        <i class="fas fa-angle-double-right"></i>
+      </div>
+
+
+    </div>
+
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
