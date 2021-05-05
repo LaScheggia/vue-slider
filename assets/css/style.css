@@ -11,8 +11,8 @@ body{
 h1 {
   text-align: center;
   font-family: 'Krona One', sans-serif;
-  font-size:64px;
-  letter-spacing:10px;
+  font-size: 50px;
+  letter-spacing: 10px;
   animation: text-flicker 3s linear infinite;
   color: pink;
   padding-top: 15px;;
@@ -192,7 +192,7 @@ button.big-button:active {
 button.big-button:active::before {
   transform: translate3d(0, 0, -1em);
   
-      box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
+    box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
 
 }
 
@@ -201,7 +201,7 @@ button.big-button:active::before {
   align-items: center;
   width: 80%;
   margin: 0 auto;
-  height: 75vh;
+  height: 73vh;
 }
 
 .slide-wrapper{
@@ -234,6 +234,12 @@ button.big-button:active::before {
   right: 0;
 }
 
+.prev:hover, 
+.next:hover{
+  font-size: 60px;
+  color: rgb(203, 149, 167);
+}
+
 .nav{
   position: absolute;
   left: 50%;
@@ -252,5 +258,10 @@ button.big-button:active::before {
 }
 
 .nav > i.active{
+  font-size: 30px;
   color: rgb(209, 22, 227);
+}
+
+.audio{
+  text-align: center;
 }
