@@ -8,6 +8,7 @@ body{
   background-image: url(img/retro.jpg);
 }
 
+/* TITOLOZZO V A P O R */
 h1 {
   text-align: center;
   font-family: 'Krona One', sans-serif;
@@ -18,10 +19,12 @@ h1 {
   padding-top: 15px;;
 }
 
+/* EFFETTO FLICKER */
 #offset {
   animation: letter-flicker 2s linear infinite;
 }
 
+/* KEYFRAME NEON */
 @keyframes text-flicker {
   0% {
     opacity:0.1;
@@ -77,6 +80,7 @@ h1 {
   }
 }
 
+/* KEYFRAME FLICKER */
 @keyframes letter-flicker {
   0% {
     opacity:0.1;
@@ -118,8 +122,16 @@ h1 {
   }
 }
 
+/* FONTER VAPOR */
 .special-font{
   font-family: 'Ubuntu Mono', monospace;
+}
+
+/* BOTTONE RICK */
+
+.rick{
+  text-align: center;
+  padding-top: 30px;
 }
 
 :root {
@@ -131,11 +143,7 @@ h1 {
   --colorShadeE: rgb(203, 156, 210);
 }
 
-.rick{
-  text-align: center;
-  padding-top: 30px;
-}
-
+/* BOTTONE */
 button {
   text-align: center;
   position: relative;
@@ -153,13 +161,14 @@ button {
 }
 
 button.big-button {
-   padding: 1em 2em;
-   border: 2px solid var(--colorShadeA);
+  padding: 1em 2em;
+  border: 2px solid var(--colorShadeA);
   border-radius: 1em;
   background: var(--colorShadeE);
   transform-style: preserve-3d;
-   transition: all 175ms cubic-bezier(0, 0, 1, 1);
+  transition: all 175ms cubic-bezier(0, 0, 1, 1);
 }
+
 button.big-button::before {
   position: absolute;
   content: '';
@@ -171,7 +180,7 @@ button.big-button::before {
   bottom: 0;
   background: var(--colorShadeC);
   border-radius: inherit;
-    box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.75em 0 0 var(--colorShadeA);
+  box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.75em 0 0 var(--colorShadeA);
  transform: translate3d(0, 0.75em, -1em);
      transition: all 175ms cubic-bezier(0, 0, 1, 1);
 }
@@ -196,6 +205,7 @@ button.big-button:active::before {
 
 }
 
+/* CONTAINER MACCHINE */
 .container{
   display: flex;
   align-items: center;
@@ -204,6 +214,7 @@ button.big-button:active::before {
   height: 73vh;
 }
 
+/* WRAPPER */
 .slide-wrapper{
   position: relative;
   width: 100%;
@@ -221,6 +232,7 @@ button.big-button:active::before {
   height: 100%;
 }
 
+/* FRECCE */
 .prev, .next{
   position: absolute;
   top: 50%;
@@ -240,6 +252,7 @@ button.big-button:active::before {
   color: rgb(203, 149, 167);
 }
 
+/* PICCOLA NAV ICONS */
 .nav{
   position: absolute;
   left: 50%;
@@ -262,6 +275,8 @@ button.big-button:active::before {
   color: rgb(209, 22, 227);
 }
 
+/* AUDIO PLAYER */
 .audio{
+  padding-top: 10px;
   text-align: center;
 }
